@@ -1,3 +1,2 @@
 .idea/
-.htaccess
-Config/
+public_html/BE/Config/config.php
