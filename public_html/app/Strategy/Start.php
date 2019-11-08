@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bot\Strategy;
+namespace App\Strategy;
 
 class Start implements StrategyInterface {
 

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Bot\Factory;
+namespace App\Factory;
 
-use Bot\Context\StrategyContext;
-use Bot\Strategy\Start;
-use Bot\Strategy\Info;
-use Bot\Strategy\Custom;
+use App\Context\StrategyContext;
+use App\Strategy\Start;
+use App\Strategy\Info;
+use App\Strategy\Custom;
 
 class StrategyFactory
 {

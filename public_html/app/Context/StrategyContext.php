@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Bot\Context;
+namespace App\Context;
 
-use Bot\Strategy\StrategyInterface;
+use App\Strategy\StrategyInterface;
 
 class StrategyContext
 {

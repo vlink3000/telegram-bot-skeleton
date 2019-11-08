@@ -1,7 +1,11 @@
 <?php
 
-declare(strict_types=1);
+spl_autoload_register(function ($className) {
 
-spl_autoload_register(function ($class_name) {
-    include __DIR__ . '/' . str_replace('\\', '/', $class_name) . '.php';
+    $rootDir =  __DIR__ . '/';
+    $classPath = str_replace('\\', '/', str_replace('App', 'app', $className)) . '.php';
+
+    $file = $rootDir . $classPath;
+
+    require_once ($file);
 });
