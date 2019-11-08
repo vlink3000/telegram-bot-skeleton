@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
-require_once ('classes.php');
+require_once ('autoload.php');
+
+use Bot\Factory\StrategyFactory;
+use Bot\Http\Curl\CallTelegramApi;
 
 //get response from telegram api
 $request = json_decode(file_get_contents('php://input'), true);

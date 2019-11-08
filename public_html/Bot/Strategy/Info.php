@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Bot\Strategy;
+
 class Info implements StrategyInterface {
 
     public function prepareResponse(array $request) {

@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+namespace Bot\Factory;
+
+use Bot\Context\StrategyContext;
+use Bot\Strategy\Start;
+use Bot\Strategy\Info;
+use Bot\Strategy\Custom;
+
 class StrategyFactory
 {
     public function chooseStrategy($request)

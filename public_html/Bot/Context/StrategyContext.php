@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+namespace Bot\Context;
+
+use Bot\Strategy\StrategyInterface;
+
 class StrategyContext
 {
     private $strategy;

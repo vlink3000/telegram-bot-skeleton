@@ -2,14 +2,16 @@
 
 declare(strict_types=1);
 
-class Start implements StrategyInterface{
+namespace Bot\Strategy;
 
-    public function prepareResponse(array $request)
-    {
+class Custom implements StrategyInterface {
+
+    public function prepareResponse(array $request) {
+
         return [
             'params' => [
                 'chat_id' => $request['message']['chat']['id'],
-                'text' => 'Well, let\'s get started'
+                'text' => 'Custom response',
             ],
             'method' => [
                 'sendMessage'

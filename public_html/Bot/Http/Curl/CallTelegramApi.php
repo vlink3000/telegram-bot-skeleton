@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
+namespace Bot\Http\Curl;
+
 class CallTelegramApi
 {
     public function sendPostRequest($method, $params = [])
     {
-        $config = include ($_SERVER["DOCUMENT_ROOT"] . '/BE/Config/config.php');
+        $config = include ($_SERVER["DOCUMENT_ROOT"] . '/Bot/Config/config.php');
         $baseUrl = $config['endpoint'];
 
         if(!empty($params)) {
