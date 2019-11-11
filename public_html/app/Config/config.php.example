@@ -3,5 +3,10 @@
 declare(strict_types=1);
 
 return array(
-    'endpoint' => 'https://api.telegram.org/bot977579507:AAEYT0UcfP433BuMtG9jaXes90cv56dnBvM/',
+    'endpoint' => 'https://api.telegram.org/bot{BotToken}/',
+    'admin' => [
+        'login' => 'foo',
+        'password' => 'bar'
+    ]
+    'token' => 'bigAndPrettyToken'
 );

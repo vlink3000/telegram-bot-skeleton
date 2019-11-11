@@ -1,0 +1,10 @@
+.validationErr {
+    border-bottom: 0.5px solid #F44336!important;
+    box-shadow: 0 0.5px 0 0 #F44336!important;
+}
+.errLabel {
+    color: #F44336!important;
+}
+.md-form label.active {
+    outline: none;
+}
